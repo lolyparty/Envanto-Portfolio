@@ -1,61 +1,93 @@
 *{
     padding:0px;
-     margin:0px ;
+     margin:0px;
+     box-sizing: border-box;
+
 }
 
 body{
     font-family: 'Poppins', sans-serif;
     background:#000000;
     color:#FEFEFE;
+    overflow-x: hidden;
     background:url('img/Rectangle\ 1.svg');
     background-position-x: 100%;
     background-color: #000;
     background-repeat: no-repeat;
-    background-size: 100% 20%;
+    /* background-size: 100% 20%; */
 }
 
-.conatiner{
-    position:relative;
+.nav-bar{
+    height:4rem;
+    /* background:#000000; */
+    /* position: fixed; */
 }
 
-.img-btn{
-    width:25px !important;
-    height:25px !important;
-}
-
-.nav-button{
-    top:5%;
-    left:85%;
+.nav{
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
 }
 
 ul li{
     list-style: none;
 }
 
-.navbtn{
-    height:100%;
-    background:#000;
-    height:100%;
+.hamburger{
     position: fixed;
-    line-height: 40px;
-    font-size:2rem;
-    width:100%;
-    z-index: 10000;
-    transition: 1s;
+    top:7%;
+    left:82%;
+    z-index: 10;
 }
 
-.navbar-close{
-    z-index:0 !important;
-    display:none !important;
-    transition: 1s;
-
+.menu{
+    height:3px;
+    width:2.5rem;
+    background:#fff;
+    border-radius:20%;
+    position:absolute;
+    transition:0.7s;
 }
 
-.closebtn{
+.menu::before, .menu::after{
+    content:'';
+    position:absolute;
+    height:3px;
+    width:2.5rem;
+    background:#fff;
+    border-radius:20%;
+    transition:0.7s;
+}
+
+.menu::before{
+    transform: translateY(-12px);
+}
+
+.menu::after{
+    transform: translateY(12px);
+}
+
+nav.open .menu{
+    transform:translateX(-30px);
+    transition:0.7s;
+    background:transparent;
+}
+
+nav.open .menu::before{
+    transform:rotate(45deg) translate(15px, -15px);
+    transition:0.7s;
+}
+
+nav.open .menu::after{
+    transform: rotate(-45deg) translate(15px, 15px);
+    transition:0.7s;
+}
+
+/* .closebtn{
     top:2%;
     left:70%;
     position:absolute;    
-}
+} */
 
 .img-btn2{
     width:100px;
@@ -96,7 +128,7 @@ a:hover{
 }
 
 .port-col{
-    padding-top: 1rem !important;
+    padding-top:5rem !important
 }
 
 .img-col{
@@ -192,13 +224,46 @@ input, textarea{
     body{
         background-size: unset;
     }
-    .test-col{
-        margin-top:6rem !important;
+
+    .nav li{
+        margin:0.6rem 0rem;
+        /* display:none; */
+        transform:translateX(100px);
+        transition: 0.5s !important;
     }
 
-    .nav-button{
-        display:block !important;
-        position:absolute;
+    .nav{
+        position: fixed;
+        background:#000000;
+        flex-direction: column !important;
+        width:0%;
+        height:100vh;
+        z-index: 2;
+        padding:0px !important;
+        transition:all 0.5s ease-in-out;
+        /* margin-top:1rem; */
+        right:0px !important;
+    }
+    
+    .nav-bar{
+        overflow-x: hidden !important;
+    }
+
+    .nav-bar.open .nav{
+        width:100% !important;
+    }
+
+    .nav-bar.open .nav li{
+        transform:translateX(0px);
+        transition:all 1s ease-in-out;
+    } 
+
+    .port-img{
+        width:100%;
+    }
+
+    .test-col{
+        margin-top:6rem !important;
     }
 
     .col-md-4{
@@ -211,6 +276,12 @@ input, textarea{
         border-bottom:1px solid #fff !important;
         border-right:none !important; 
     }
+
+    .port-col{
+        padding-top:0rem !important;
+        padding-bottom:0rem !important; 
+   }
+
     .service-col, .photo{
         border-right:none !important; 
     }
@@ -243,6 +314,5 @@ input, textarea{
     .info-p{
         font-size:0.6rem
     }
-
 
 }
