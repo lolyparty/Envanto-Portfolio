@@ -9,11 +9,15 @@ body{
     font-family: 'Poppins', sans-serif;
     background:#000000;
     color:#FEFEFE;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background:url('img/Rectangle\ 1.svg');
     background-position-x: 100%;
     background-color: #000;
     background-repeat: no-repeat;
+}
+
+.container{
+    overflow-x:hidden !important;
 }
 
 .nav-bar{
@@ -200,6 +204,7 @@ h6{
     top:70%;
     left:4%;
     color:#c5c5c5;
+    /* line-height: 5px; */
 }
 
 .info-p1{

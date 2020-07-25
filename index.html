@@ -8,6 +8,8 @@
     <link href="style.css" type="text/css" rel="stylesheet" >
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!---AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Envato Portfolio Template</title>
 </head>
 <body data-spy="scroll" data-target="#nav">
@@ -69,36 +71,36 @@
                 <div class="col-md-4 border border-top-0 border-bottom-0 py-5">
                     <h3 class="display-5 ml-3 mb-0">Portfolio</h3>
                         <div class="p-4  border-bottom">
-                            <img class="img-fluid port-img" src="img/Rectangle 4.png">
+                            <img class="img-fluid port-img" src="img/Rectangle 4.png" data-aos="zoom-in">
                         </div>
                     
                     <div class="p-4 border-bottom d-none d-md-block">
-                        <img class="img-fluid port-img" src="img/Rectangle 5.png">
+                        <img class="img-fluid port-img" src="img/Rectangle 5.png" data-aos="zoom-in">
                     </div>
                     <div class="p-4 img-col d-none d-md-block">
-                        <img class="img-fluid port-img" src="img/Rectangle 6.png">
+                        <img class="img-fluid port-img" src="img/Rectangle 6.png" data-aos="zoom-in">
                     </div>
 
                 </div>
                 <div class="col-md-4 border border-top-0 border-bottom-0 py-5 port-col">
                     <!-- <h3 class="display-5 ml-3">Portfolio</h3> -->
                     <div class="p-4">
-                        <img class="img-fluid port-img" src="img/Rectangle 7.png">
+                        <img class="img-fluid port-img" src="img/Rectangle 7.png" data-aos="fade-down">
                     </div>
                     <div class="p-4 pt-4 d-none d-md-block">
-                        <img class="img-fluid port-img" src="img/Rectangle 9.png">
+                        <img class="img-fluid port-img" src="img/Rectangle 9.png" data-aos="fade-up">
                     </div>
                 </div>
                 <div class="col-md-4 border border-top-0 border-bottom-0 py-5 port-col">
                     <!-- <h3 class="display-5 ml-3">Portfolio</h3> -->
                     <div class="p-4 border-bottom">
-                        <img class="img-fluid port-img" src="img/Rectangle 10.png">
+                        <img class="img-fluid port-img" src="img/Rectangle 10.png" data-aos="zoom-in">
                     </div>
                     <div class="p-4 border-bottom d-none d-md-block">
-                        <img class="img-fluid port-img" src="img/Rectangle 11.png">
+                        <img class="img-fluid port-img" src="img/Rectangle 11.png" data-aos="zoom-in">
                     </div>
                     <div class="p-4 img-col d-none d-md-block">
-                        <img class="img-fluid port-img" src="img/Rectangle 12.png">
+                        <img class="img-fluid port-img" src="img/Rectangle 12.png" data-aos="zoom-in">
                     </div>
                 </div>
                 
@@ -254,22 +256,22 @@
             <div class="row">
                 <div class="col-md-8 border border-top-0 border-bottom-0 border-left-0 journal-col">
                     <h3 class="display-5">My Journal</h3>
-                    <div class="my-4 journal-col">
+                    <div class="my-4 journal-col" data-aos="zoom-in">
                         <img src="img/Rectangle 18.png" alt="" class="img-fluid">
-                        <div class="info-p">
-                            <p class="text-light">The Best way to take food photograph</p>
+                        <div class="info-p " >
+                            <p class="text-light mb-1">The Best way to take food photograph</p>
                             <p>By Joseph Kalu &nbsp; &nbsp; 5 mins read</p>
                         </div>
                     </div>
                     <div class="bottom-journal d-md-flex justify-content-between pb-5">
-                        <div class="col journalcol pl-0 my-2">
+                        <div class="col journalcol pl-0 my-2" data-aos="fade-left">
                             <img src="img/Rectangle 20.png" alt="" class="img-fluid port-img">
                             <div class="info-p ">
                                 <p class="text-light">My top 10 Events </p>
                                 <p>By Joseph Kalu &nbsp; &nbsp; 5 mins read</p>
                             </div>
                         </div>
-                        <div class="col  pl-0 mr-0 pr-0 my-2">
+                        <div class="col  pl-0 mr-0 pr-0 my-2" data-aos="fade-right">
                             <img src="img/Rectangle 21.png" alt="" class="img-fluid port-img">
                             <div class="info-p ">
                                 <p class="text-light">My travel Journal </p>
@@ -330,8 +332,6 @@
     </div>
 
     <script src="app.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -339,7 +339,12 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <!--aos-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        AOS.init({
+            duration:1500,
+        })
        //scroll spy
        $('body').scrollspy({target:'#nav'});
 
