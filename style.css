@@ -16,6 +16,22 @@ body{
     background-repeat: no-repeat;
 }
 
+.scroll_top{
+    height:30px;
+    width:30px;
+    position: fixed;
+    top:80vh;
+    background:transparent;
+    right:3%;
+    z-index:10000000;
+}
+
+.fa.fa-arrow-up{
+    align-self: center;
+    color:#fff;
+    cursor: pointer;
+}
+
 .container{
     overflow-x:hidden !important;
 }
